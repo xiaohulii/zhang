@@ -1,0 +1,429 @@
+html,body{width:100%;height:100%;min-height: 100%;font-family:"方正兰亭黑简体","Microsoft YaHei",Arial,"微软雅黑", sans-serif;} 
+body{padding:0; margin:0; font-size:14px;border:0;margin:0 auto;font-family:"方正兰亭黑简体","Microsoft YaHei",Arial,"微软雅黑", sans-serif;min-width:1350px;}
+.copyright{ width:100%; height:50px; line-height:50px;text-align:center; margin:0 auto;  color:#000; font-size:14px;position: absolute;bottom: 0px;}
+
+.cover{display:none;position:fixed;width:100%;height:100%;top:0;left:0;background:#000;z-index:10000;font-size:16px}.cover .iphone{width:146px;height:218px;position:absolute;left:50%;top:40%;
+margin-top:-54px;margin-left:-36px;
+background:url(../images/phone.png) no-repeat;
+background-size:146px 218px;animation:zhuan 1.5s .3s infinite;-ms-animation:zhuan 1.5s .3s infinite;-moz-animation:zhuan 1.5s .3s infinite;-webkit-animation:zhuan 1.5s .3s infinite}
+@-webkit-keyframes zhuan{0%{-webkit-transform:rotate(-90deg)}50%{-webkit-transform:rotate(0)}100%{-webkit-transform:rotate(-90deg)}}@-ms-keyframes zhuan{0%{-ms-transform:rotate(-90deg)}
+50%{-ms-transform:rotate(0)}100%{-ms-transform:rotate(-90deg)}}@-moz-keyframes zhuan{0%{-moz-transform:rotate(-90deg)}50%{-moz-transform:rotate(0)}100%{-moz-transform:rotate(-90deg)}}
+@keyframes zhuan{0%{transform:rotate(-90deg)}50%{transform:rotate(0)}100%{transform:rotate(-90deg)}}.cover p{position:absolute;top:65%;left:0;font-size:2.5em;text-align:center;width:100%;color:#fff}
+@media screen and (orientation:portrait){.cover{display:block}}
+
+/*公共样式*/
+.wraps{
+  position: relative;
+  top: 0;
+  left: 0; 
+  width: 100%; 
+  height: 100%;
+  min-width: 1280px;
+  min-height: 700px;
+  overflow:hidden;
+}
+.page_bg{
+  position: absolute;
+  z-index: -1;
+}
+.header{
+  height:100px;
+  width:100%;
+  color: white;
+}
+.header .inner{
+/*  width:100;*/
+  margin: 0 auto;
+  height:100%;
+  position: relative;
+}
+.header .logo{
+  position: absolute;
+  left:8%;
+  top:55px;
+}
+.content{
+  width:100%;
+ /* margin-top:50px;*/
+  margin-top:5%;
+}
+.content .inner{
+  /*width:83%;*/
+  width:1300px;
+  margin:0 auto;
+  height: 545px;
+}
+.content .nav{
+  width:300px;
+  float: left;
+  background:url(../images/nav-bg.png) no-repeat left top;
+  margin-top: 15px;
+  height:100%;
+  position: relative;
+}
+.content .nav li{
+  font-size: 20px;
+/*  font-family: "方正兰亭黑简体";*/
+  /*background: url(../images/gray.png) no-repeat;
+  width: 130px;
+  height: 57px;
+  text-align: center;
+  line-height: 45px;
+  margin-left:80px;*/
+  position: absolute;
+  left:0;
+}
+/*.content .nav li.act{
+  background:url(../images/green.png) no-repeat;
+  left:60px;
+}*/
+.content .nav li a{
+  display: inline-block;
+  background: url(../images/gray.png) no-repeat;
+  width: 130px;
+  height: 57px;
+  text-align: center;
+  line-height: 45px;
+  margin-left:80px;
+  color: #282828;
+  position: absolute;
+  top:0;
+  left:0;
+}
+.content .nav li img{
+  position: absolute;
+  top:0;
+  left:40px;
+}
+.content .nav li a.act{
+  background:url(../images/green.png) no-repeat;
+  left:20px;
+}
+.content .nav .li-index{
+  top:115px;
+}
+.content .nav .li-about{
+  top:188px;
+}
+.content .nav .li-job{
+  top:253px;
+}
+.content .nav .li-welfare{
+  top:317px;
+}
+.content .nav .li-wish{
+  top:379px;
+}
+.content .nav .li-link{
+  top:446px;
+}
+.content .con{
+  width: 1000px;
+  height: 100%;
+  background:rgba(255,255,255,0.5);
+  float: right;
+}
+/*关于我们*/
+.job,.wish,.welfare{
+  display: none;
+}
+.con .con-bar{
+}
+.con .con-bar .menu{
+  float: right;
+  margin-right:30px;
+}
+.con .con-bar .menu li{
+  float: left;
+  width:106px;
+  text-align: center;
+  height:35px;
+  line-height: 35px;
+  background-color: #0085d0;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  margin:30px 0 30px 20px;
+}
+.con .con-bar .menu li:hover{
+  cursor: pointer;
+}
+.con .con-bar .menu li.act{
+  background-color: #e40077;
+}
+.con .con-box{
+
+}
+.con .chapter{
+  height:400px;
+  width:940px;
+  margin:0 auto;
+  margin-top:10px;
+  overflow: auto;
+}
+
+.chapter p{
+  font-size: 16px;
+  color: #282828;
+  line-height: 35px;
+  margin-bottom: 15px;
+  text-indent: 2em;
+  text-align: justify;
+/*  font-family: "方正兰亭黑简体";*/
+}
+.con .con-box .about-1{
+
+}
+.con .con-box .about-2{
+  display: none;
+}
+.con .con-box .about-3{
+  display: none;
+}
+.con .con-box .about-4{
+  display: none;
+}
+
+
+/*福利待遇*/
+.welfare .con-bar .menu li{
+  width:200px;
+}
+.welfare .welfare-1 p{
+  padding:0 20px;
+}
+.welfare-2{
+  display: none;
+}
+.welfare-2 ul li{
+  float: left;
+  width:218px;
+  height:235px;
+  margin-right:21px;
+}
+.icon{
+  width:51px;
+  height:51px;
+  margin:10px auto;
+  text-align: center;
+  line-height: 51px;
+  background:url(../images/icon.png) no-repeat center center;
+  font-weight: bold;
+  font-size: 20px;
+}
+.welfare-2 ul li.blue{
+  background:rgba(0,133,208,0.2);
+}
+.welfare-2 ul li.blue .icon{
+  color:#0085d0;
+}
+.welfare-2 ul li.pink{
+  background:rgba(228,0,119,0.2);
+}
+.welfare-2 ul li.pink .icon{
+  color:#e7348b;
+}
+.welfare-2 ul li.blue1{
+  background:rgba(0,133,208,0.2);
+}
+.welfare-2 ul li.blue1 .icon{
+  color:#0085d0;
+}
+.welfare-2 ul li.green{
+  background:rgba(142,195,31,0.2);
+  margin-right:0;
+}
+.welfare-2 ul li.green .icon{
+  color:#8ec31f;
+}
+.welfare-2 .words{
+  width:200px;
+  margin:0 auto;
+  font-size: 16px;
+  color: #010101;
+  line-height: 26px;
+  text-align: justify;
+}
+.welfare-2 .contact{
+  width:100%;
+  height:100px;
+  background:rgba(0,133,208,0.2);
+  margin-top:30px;
+}
+.welfare-2 .left{
+  float: left;
+  width:100px;
+  padding-left: 40px;
+  line-height: 59px;
+  color: #0085d0;
+  font-size: 18px;
+  font-weight: bold;
+}
+.welfare .welfare-2 .right{
+  float: left;
+  margin-top:20px;
+}
+.welfare .welfare-2 .right p{
+  line-height: 20px;
+  font-weight: bold;
+  text-indent: 0em;
+}
+/*员工心声*/
+.wish .chapter.wish-1{
+  margin:90px auto;
+  width:730px;
+}
+
+/*校园招聘*/
+.job table{
+  margin:0 auto;
+}
+.job-2,.job-3,.job-4{
+  display: none;
+}
+
+.job-1 .city-list{
+  float: left;
+  width:14%;
+  height:400px;
+  overflow: auto;
+}
+.job-1 .city-list .city .city-name{
+  background-color: #62ac35;
+  color: white;
+  width:100%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.job-1 .city .companys{
+  text-align: center;
+  margin:10px 0;
+  display: none;
+}
+.job-1 .city .companys li{
+  font-size: 18px;
+}
+.job-1 .city .companys li:hover{
+  cursor:pointer;
+}
+.job-1 .city .companys li.act{
+  color: #0085d0;
+}
+.job-1 .detail{
+  float: right;
+  width:82%;
+  height:400px;
+  overflow: auto;
+}
+.job-1 .detail li{
+  margin-bottom: 20px;
+}
+.job-1 .detail li .job-class{
+  position:relative;
+}
+.job-1 .detail li .job-class span{
+  display: inline-block;
+  width:150px;
+  height:35px;
+  line-height: 35px;
+  background-color: #0085d0;
+  color: white;
+  padding-left: 20px;
+  font-size: 20px;
+}
+.job-1 .detail li .job-class a{
+  display: inline-block;
+  width:78px;
+  height:21px;
+  position: absolute;
+  top:10px;
+  right: 0;
+}
+
+.job-1 .detail li .job-detail h2{
+  font-size: 16px;
+  color: #0085d0;
+  font-weight: bold;
+  line-height: 30px;
+  margin-top:5px;
+}
+.job-1 .detail li .job-detail p{
+  text-indent: 0;
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 0;
+}
+
+.left-style{
+  text-align: left;
+}
+.job-2 table .tr-head{
+  background-color: #0085d0;
+  color: white;
+  height:50px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  border:1px solid #0085d0;
+}
+.job-2 table tr{
+  height:40px;
+  text-align: center;
+  border:1px solid #0085d0;
+}
+.job-3 div{
+  margin-bottom: 20px;
+}
+.job-3 div img{
+  width:100%;
+}
+.chapter.job-3 p{
+  line-height: 25px;
+  text-indent: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-family: '方正兰亭黑简体';
+}
+.job-4 table .tr-head{
+  background-color: rgba(142,195,31,0.5);
+  color: white;
+  height:50px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  border:1px solid #a3ca8f;
+}
+.job-4 table tr{
+  height:50px;
+  text-align: center;
+}
+/*scrollBar*/
+.mCSB_scrollTools .mCSB_dragger div.mCSB_dragger_bar{
+    background-color: black;
+    background-color: rgba(228,0,119,1);
+    filter: "alpha(opacity=75)";
+    -ms-filter: "alpha(opacity=75)";
+}
+
+.mCSB_scrollTools .mCSB_dragger:hover div.mCSB_dragger_bar{
+  background-color: black; background-color: rgba(228,0,119,1);
+  filter: "alpha(opacity=85)"; -ms-filter: "alpha(opacity=85)"; 
+}
+
+.mCSB_scrollTools .mCSB_dragger:active div.mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag div.mCSB_dragger_bar{
+  background-color: black; background-color: rgba(228,0,119,1);
+  filter: "alpha(opacity=90)"; -ms-filter: "alpha(opacity=90)"; 
+}
+
+.mCSB_scrollTools .mCSB_dragger div.mCSB_dragger_bar {
+  width: 8px;
+}
+.mCSB_scrollTools div.mCSB_draggerRail{
+  background-color: rgba(0,133,208,1);
+}
+.mCSB_scrollTools div.mCSB_draggerRail{
+  width: 8px;
+}
